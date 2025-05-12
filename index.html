@@ -1,1 +1,111 @@
-<h1>Hello WOrld!</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Krma Verso - Juegos & Apps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+      color: #00f7ff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid #0ff;
+      animation: glow 2s infinite alternate;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff00f7;
+    }
+
+    .seccion {
+      padding: 2rem 1rem;
+    }
+
+    .tarjeta {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid #00f7ff;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 10px #00f7ff;
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      padding: 1rem;
+      background: #111;
+      border-top: 2px solid #0ff;
+      font-size: 0.9rem;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #0ff; }
+      100% { box-shadow: 0 0 20px #ff00f7; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌌 El Krma Verso</h1>
+    <nav>
+      <a href="#juegos">Juegos</a>
+      <a href="#apps">Aplicaciones</a>
+      <a href="#tutoriales">Tutoriales</a>
+    </nav>
+  </header>
+
+  <section id="juegos" class="seccion">
+    <h2>🎮 Juegos</h2>
+    <div class="tarjeta">
+      <h3>KrmaCraft Lite</h3>
+      <p>Versión optimizada de Minecraft para PCs humildes. <a href="#">Descargar</a></p>
+    </div>
+    <!-- Agrega más tarjetas de juegos aquí -->
+  </section>
+
+  <section id="apps" class="seccion">
+    <h2>📲 Aplicaciones</h2>
+    <div class="tarjeta">
+      <h3>Krma Player</h3>
+      <p>Reproductor multimedia ligero con skin cósmico. <a href="#">Descargar</a></p>
+    </div>
+    <!-- Más tarjetas de apps -->
+  </section>
+
+  <section id="tutoriales" class="seccion">
+    <h2>📚 Tutoriales</h2>
+    <div class="tarjeta">
+      <h3>Cómo instalar KrmaCraft</h3>
+      <p>Guía paso a paso para instalar y correr el juego sin lag. <a href="#">Ver tutorial</a></p>
+    </div>
+    <!-- Más tutoriales -->
+  </sec
+
