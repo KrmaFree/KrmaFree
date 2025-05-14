@@ -2,113 +2,122 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Krma Verso - Juegos & Apps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El KrmaVerso</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap">
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
-      color: #00f7ff;
+      background: linear-gradient(to bottom, #0a0a23, #1e1e40);
+      color: cyan;
       text-align: center;
-      overflow-x: hidden;
+      animation: fadeIn 1s ease-in;
     }
 
     header {
-      padding: 2rem 1rem;
-      background: rgba(0, 0, 0, 0.5);
-      border-bottom: 2px solid #0ff;
-      animation: glow 2s infinite alternate;
+      padding: 30px 20px 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 2px solid cyan;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     h1 {
-      font-size: 2.5rem;
-      text-shadow: 0 0 10px #0ff;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      font-size: 2.5em;
     }
 
     nav a {
-      margin: 0 1rem;
-      color: #0ff;
+      margin: 0 15px;
+      color: cyan;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s ease;
+      border: 2px solid cyan;
+      border-radius: 10px;
+      padding: 10px 20px;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #ff00f7;
+      background-color: cyan;
+      color: #000;
     }
 
-    .seccion {
-      padding: 2rem 1rem;
-    }
-
-    .tarjeta {
-      background: rgba(0, 0, 0, 0.3);
-      border: 1px solid #00f7ff;
-      border-radius: 12px;
-      padding: 1rem;
-      margin: 1rem auto;
-      width: 90%;
+    .section {
+      margin: 50px auto;
+      padding: 40px;
       max-width: 600px;
-      box-shadow: 0 0 10px #00f7ff;
-      transition: transform 0.3s ease;
+      border: 2px solid cyan;
+      border-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 20px cyan;
+      transition: transform 0.2s ease-in-out;
     }
 
-    .tarjeta:hover {
+    .section:hover {
       transform: scale(1.03);
     }
 
-    footer {
-      padding: 1rem;
-      background: #111;
-      border-top: 2px solid #0ff;
-      font-size: 0.9rem;
+    .section a {
+      color: cyan;
+      font-size: 1.4em;
+      text-decoration: none;
+      display: block;
     }
 
-    @keyframes glow {
-      0% { box-shadow: 0 0 10px #0ff; }
-      100% { box-shadow: 0 0 20px #ff00f7; }
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      border-top: 1px solid cyan;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
+
+  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d53fc7f75c.mp3?filename=blip-131856.mp3"></audio>
+
   <header>
-    <h1>🌌 El Krma Verso</h1>
+    <h1>🌌 El KrmaVerso</h1>
     <nav>
-      <a href="#juegos">Juegos</a>
-      <a href="#apps">Aplicaciones</a>
-      <a href="#tutoriales">Tutoriales</a>
+      <a href="juegos.html" onclick="playClick()">Juegos</a>
+      <a href="apps.html" onclick="playClick()">Aplicaciones</a>
+      <a href="tutos.html" onclick="playClick()">Tutoriales</a>
     </nav>
   </header>
 
-  <section id="juegos" class="seccion">
-    <div class="tarjeta">
-      <h2>
-  <a href="https://krmafree.github.io/KrmaFree/juegos.html" target="_blank" style="color: #00f0ff; text-decoration: none;">
-    <i class="fa fa-gamepad"></i> Juegos
-  </a>
-</h2>
+  <div class="section">
+    <a href="juegos.html" onclick="playClick()">🎮 Juegos</a>
+  </div>
 
-    </div>
-    <!-- Agrega más tarjetas de juegos aquí -->
-  </section>
+  <div class="section">
+    <a href="apps.html" onclick="playClick()">📱 Aplicaciones</a>
+  </div>
 
-  <section id="apps" class="seccion">
-    <h2>📲 Aplicaciones</h2>
-    <div class="tarjeta">
-      <h3>Krma Player</h3>
-      <p>Reproductor multimedia ligero con skin cósmico. <a href="#">Descargar</a></p>
-    </div>
-    <!-- Más tarjetas de apps -->
-  </section>
+  <div class="section">
+    <a href="tutos.html" onclick="playClick()">📘 Tutoriales</a>
+  </div>
 
-  <section id="tutoriales" class="seccion">
-    <h2>📚 Tutoriales</h2>
-    <div class="tarjeta">
-      <h3>Cómo instalar KrmaCraft</h3>
-      <p>Guía paso a paso para instalar y correr el juego sin lag. <a href="#">Ver tutorial</a></p>
-    </div>
-    <!-- Más tutoriales -->
-  </sec
+  <footer>
+    © 2025 El KrmaVerso | Hecho con energía cósmica ✨
+  </footer>
 
+  <script>
+    function playClick() {
+      const sound = document.getElementById('clickSound');
+      sound.currentTime = 0;
+      sound.play();
+    }
+  </script>
+</body>
+</html>
