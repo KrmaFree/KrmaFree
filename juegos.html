@@ -6,19 +6,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       background: url('https://wallpapercave.com/wp/wp11702241.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Orbitron', sans-serif;
       color: #00f0ff;
       text-align: center;
-      padding: 40px 20px;
+    }
+
+    body, .main, .content, .post {
+      background: transparent !important;
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 30px;
+      margin: 30px 0;
       text-shadow: 0 0 10px #00f0ff;
     }
 
@@ -75,25 +80,21 @@
 <body>
   <h1>🎮 Juegos disponibles</h1>
 
-  <!-- JUEGO 1 -->
   <div class="juego">
     <h2>Título del Juego 1</h2>
     <a class="descargar-btn" href="#" target="_blank">Descargar</a>
   </div>
 
-  <!-- JUEGO 2 -->
   <div class="juego">
     <h2>Título del Juego 2</h2>
     <a class="descargar-btn" href="#" target="_blank">Descargar</a>
   </div>
 
-  <!-- JUEGO 3 -->
   <div class="juego">
     <h2>Título del Juego 3</h2>
     <a class="descargar-btn" href="#" target="_blank">Descargar</a>
   </div>
 
-  <!-- Redes sociales -->
   <div class="redes">
     <a href="https://kick.com/tuusuario" target="_blank"><i class="fa-brands fa-kickstarter-k"></i></a>
     <a href="https://tiktok.com/@tuusuario" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
