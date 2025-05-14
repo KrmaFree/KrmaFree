@@ -48,4 +48,67 @@
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 0 15px #00f0ff;
-      transition: transfor
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .descargar-btn:hover, .volver-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .volver {
+      margin: 50px 0 20px;
+    }
+
+    .redes {
+      margin-top: 30px;
+    }
+
+    .redes a {
+      color: #00f0ff;
+      font-size: 2rem;
+      margin: 0 15px;
+      text-shadow: 0 0 10px #00f0ff;
+      transition: transform 0.3s ease;
+    }
+
+    .redes a:hover {
+      transform: scale(1.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Juegos disponibles</h1>
+
+  <!-- Juego 1 -->
+  <div class="juego">
+    <h2>GTA San Andreas + SAMP</h2>
+    <a class="descargar-btn" href="https://mega.nz/tu-link" target="_blank">Descargar</a>
+  </div>
+
+  <!-- Juego 2 -->
+  <div class="juego">
+    <h2>Título del Juego 2</h2>
+    <a class="descargar-btn" href="#">Descargar</a>
+  </div>
+
+  <!-- Juego 3 -->
+  <div class="juego">
+    <h2>Título del Juego 3</h2>
+    <a class="descargar-btn" href="#">Descargar</a>
+  </div>
+
+  <!-- Botón volver -->
+  <div class="volver">
+    <a class="volver-btn" href="https://krmafree.github.io/KrmaFree/">⬅️ Volver al inicio</a>
+  </div>
+
+  <!-- Redes sociales -->
+  <div class="redes">
+    <a href="https://kick.com/tuusuario" target="_blank" title="Kick"><i class="fa-brands fa-kickstarter-k"></i></a>
+    <a href="https://tiktok.com/@tuusuario" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+
+</body>
+</html>
