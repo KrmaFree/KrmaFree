@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Juegos - El Krma Verso</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -11,7 +11,8 @@
       color: #00f0ff;
       text-align: center;
       padding: 40px 20px;
-      background: url('img/krmaverso-fondo.jpg') no-repeat center center fixed;
+      background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+      background-attachment: fixed;
       background-size: cover;
     }
 
@@ -29,6 +30,11 @@
       margin: 20px auto;
       max-width: 600px;
       box-shadow: 0 0 20px #00f0ff44;
+    }
+
+    .juego h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
     }
 
     .descargar-btn {
@@ -49,12 +55,17 @@
     }
 
     .social-icons {
-      margin-top: 30px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      display: inline-block;
     }
 
     .social-icons img {
       width: 40px;
-      margin: 0 10px;
+      height: 40px;
     }
   </style>
 </head>
@@ -62,33 +73,28 @@
   <h1>🎮 Juegos disponibles</h1>
 
   <div class="juego">
-    <h2>Título del Juego 1</h2>
-    <a class="descargar-btn" href="#" target="_blank">Descargar</a>
+    <h2>GTA San Andreas + SAMP</h2>
+    <a class="descargar-btn" href="https://mega.nz/tu-link" target="_blank" rel="noopener noreferrer">Descargar</a>
   </div>
 
   <div class="juego">
     <h2>Título del Juego 2</h2>
-    <a class="descargar-btn" href="#" target="_blank">Descargar</a>
+    <a class="descargar-btn" href="#" target="_blank" rel="noopener noreferrer">Descargar</a>
   </div>
 
   <div class="juego">
     <h2>Título del Juego 3</h2>
-    <a class="descargar-btn" href="#" target="_blank">Descargar</a>
+    <a class="descargar-btn" href="#" target="_blank" rel="noopener noreferrer">Descargar</a>
   </div>
 
-  <!-- Íconos sociales -->
+  <!-- Redes sociales -->
   <div class="social-icons">
-    <a href="https://kick.com/tu_usuario" target="_blank">
-      <img src="img/kick-icon.svg" alt="Kick">
+    <a href="https://kick.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968872.png" alt="Kick" />
     </a>
-    <a href="https://tiktok.com/@tu_usuario" target="_blank">
-      <img src="img/tiktok-icon.svg" alt="TikTok">
+    <a href="https://www.tiktok.com/@tu_usuario" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
     </a>
   </div>
-
-  <!-- Sonido de fondo -->
-  <audio autoplay loop>
-    <source src="img/sonido-cosmico.mp3" type="audio/mpeg">
-  </audio>
 </body>
 </html>
