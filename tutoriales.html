@@ -40,14 +40,47 @@
       padding: 40px 20px;
     }
 
-    .box {
-      background: rgba(0, 0, 50, 0.4);
+    .tutorial-box {
+      background: rgba(0, 0, 50, 0.5);
       border: 2px solid #00f0ff;
       border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 500px;
-      box-shadow: 0 0 15px #00f0ff;
+      padding: 30px 20px;
+      margin: 30px auto;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00f0ff66;
+    }
+
+    .tutorial-box h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #00f0ff;
+    }
+
+    .tutorial-box iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00f0ff;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #00f0ff, #7f00ff);
+      color: white;
+      padding: 12px 30px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #00f0ff, 0 0 20px #7f00ff;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00f0ff, 0 0 30px #7f00ff;
     }
 
     .volver-inicio a {
@@ -99,13 +132,13 @@
   </nav>
 
   <div class="container">
-    <h1>📚 Tutoriales</h1>
-
-    <div class="box">
-      <h2>Cómo instalar KrmaCraft</h2>
-      <p>Guía paso a paso para instalar y correr el juego sin lag.</p>
-      <a href="#">🎥 Ver tutorial</a>
-    </div>
+    <h1>📹 Tutoriales</h1>
+    
+    <section class="tutorial-box">
+      <h2>Cómo descargar e instalar CapCut PRO </h2>
+      <iframe src="https://www.youtube.com/embed/VizO8aP855A" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=VizO8aP855A" class="btn" target="_blank">👀 Ver en Tutorial</a>
+    </section>
 
     <div class="volver-inicio">
       <a href="index.html">🔙 Volver al inicio</a>
