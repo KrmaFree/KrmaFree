@@ -40,6 +40,14 @@
       padding: 40px 20px;
     }
 
+    .tutorial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+   }
+
     .tutorial-box {
       background: rgba(0, 0, 50, 0.5);
       border: 2px solid #00f0ff;
@@ -134,17 +142,26 @@
   <div class="container">
     <h1>📹 Tutoriales</h1>
     
-    <section class="tutorial-box">
-      <h2>Cómo descargar e instalar CapCut PRO </h2>
-      <iframe src="https://www.youtube.com/embed/VizO8aP855A" allowfullscreen></iframe>
-      <a href="https://www.youtube.com/watch?v=VizO8aP855A" class="btn" target="_blank">👀 Ver en YouTube</a>
-    </section>
+<div class="tutorial-grid">
+  <div class="tutorial-box">
+    <h2>CapCut PRO 2025</h2>
+    <iframe src="https://www.youtube.com/embed/VizO8aP855A" allowfullscreen></iframe>
+    <a href="https://www.youtube.com/watch?v=VizO8aP855A" class="btn" target="_blank">👀 Ver en YouTube</a>
+  </div>
 
-    <section class="tutorial-box">
-      <h2>COMO DESCARGAR E INSTALAR SCHEDULE 1 - OPTIMIZADO!!</h2>
-      <iframe src="https://www.youtube.com/embed/Hmjz7gA0F8E" allowfullscreen></iframe>
-      <a href="https://www.youtube.com/watch?v=Hmjz7gA0F8E" class="btn" target="_blank">👀 Ver en YouTube</a>
-    </section>
+  <div class="tutorial-box">
+    <h2>Schedule 1 Optimizado</h2>
+    <iframe src="https://www.youtube.com/embed/Hmjz7gA0F8E" allowfullscreen></iframe>
+    <a href="https://www.youtube.com/watch?v=Hmjz7gA0F8E" class="btn" target="_blank">👀 Ver en YouTube</a>
+  </div>
+
+  <div class="tutorial-box">
+    <h2>Programar tareas fácilmente (Nuevo)</h2>
+    <iframe src="https://www.youtube.com/embed/EYY3oUlT9-0" allowfullscreen></iframe>
+    <a href="https://www.youtube.com/watch?v=EYY3oUlT9-0" class="btn" target="_blank">👀 Ver en YouTube</a>
+  </div>
+</div>
+
 
     <div class="volver-inicio">
       <a href="index.html">🔙 Volver al inicio</a>
