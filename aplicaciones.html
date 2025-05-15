@@ -40,16 +40,6 @@
       padding: 40px 20px;
     }
 
-    .box {
-      background: rgba(0, 0, 50, 0.4);
-      border: 2px solid #00f0ff;
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 500px;
-      box-shadow: 0 0 15px #00f0ff;
-    }
-
     .juego {
       border: 2px solid cyan;
       border-radius: 15px;
@@ -66,8 +56,14 @@
       box-shadow: 0 0 25px #00f0ff, 0 0 30px #00f0ff;
     }
 
+    .juego img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
     .boton-tutorial, .boton-descarga {
       padding: 10px 20px;
+      margin: 10px;
       border-radius: 30px;
       background: linear-gradient(to right, #00f0ff, #9d00ff);
       color: white;
@@ -75,6 +71,7 @@
       font-weight: bold;
       transition: 0.3s;
       box-shadow: 0 0 10px #00f0ff;
+      display: inline-block;
     }
 
     .boton-tutorial:hover, .boton-descarga:hover {
@@ -134,13 +131,12 @@
   <div class="container">
     <h1>📱 Aplicaciones</h1>
 
-    <div class="box">
-      <img src="https://image.winudf.com/v2/image1/ZGV2X2ltYWdlXzIwNTMxMTI3XzE3ODEzNl8yMDI0MDMxMzA0NTQ1NjAxNA/icon.png?w=184&fakeurl=1" alt="CapCut Logo" class="app-logo">
+    <div class="juego">
+      <img src="https://image.winudf.com/v2/image1/ZGV2X2ltYWdlXzIwNTMxMTI3XzE3ODEzNl8yMDI0MDMxMzA0NTQ1NjAxNA/icon.png?w=184&fakeurl=1" alt="CapCut Logo">
       <h2>CapCut PRO</h2>
       <p>(Versión 1.5)</p>
-      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
-      <a href="https://www.youtube.com/watch?v=VizO8aP855A" class="btn" target="_blank">👀 Ver Tutorial</a>
-      <a href="https://cuty.io/UqQ0xe0MJm" class="btn" target="_blank">🚀 Descargar Juego</a>
+      <a href="https://www.youtube.com/watch?v=VizO8aP855A" class="boton-tutorial" target="_blank">👀 Ver Tutorial</a>
+      <a href="https://cuty.io/UqQ0xe0MJm" class="boton-descarga" target="_blank">🚀 Descargar App</a>
     </div>
 
     <div class="volver-inicio">
