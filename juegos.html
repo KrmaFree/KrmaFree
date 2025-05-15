@@ -2,67 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Juegos - El Krma Verso</title>
+  <title>KrmaFree | Juegos</title>
   <style>
     body {
-      background: radial-gradient(circle at center, #1a0033, #000000);
+      background: radial-gradient(circle at top, #0d0221, #000);
+      font-family: 'Segoe UI', sans-serif;
       color: #00f0ff;
-      font-family: 'Orbitron', sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul {
-      list-style: none;
       padding: 20px;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      background: #111122;
-      border-bottom: 2px solid #00f0ff;
     }
 
-    nav ul li a {
-      color: #00f0ff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ff00ff;
-    }
-
-    .container {
-      padding: 40px 20px;
-    }
-
-    .game-box {
-      background: rgba(0, 0, 50, 0.5);
+    .juego-box {
+      background-color: #050018;
       border: 2px solid #00f0ff;
-      border-radius: 15px;
-      padding: 30px 20px;
+      border-radius: 20px;
+      padding: 20px;
       margin: 30px auto;
-      max-width: 600px;
-      box-shadow: 0 0 20px #00f0ff66;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px #7f00ff;
     }
 
-    .game-box h2 {
-      font-size: 1.8em;
+    .juego-logo {
+      max-width: 120px;
       margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
       color: #00f0ff;
+      margin-bottom: 5px;
     }
 
-    .game-box p {
-      font-size: 1.1em;
-      color: #ccc;
-    }
-
-    .download-buttons {
-      margin-top: 20px;
+    p {
+      color: #aaa;
+      margin: 5px 0;
     }
 
     .btn {
@@ -76,6 +51,7 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 0 10px #00f0ff, 0 0 20px #7f00ff;
       display: inline-block;
+      margin-top: 12px;
     }
 
     .btn:hover {
@@ -83,88 +59,51 @@
       box-shadow: 0 0 20px #00f0ff, 0 0 30px #7f00ff;
     }
 
-    .volver-inicio a {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 10px 20px;
-      background: linear-gradient(90deg, #00f0ff, #7f00ff);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      box-shadow: 0 0 10px #00f0ff, 0 0 20px #7f00ff;
-      transition: transform 0.3s ease;
-    }
-
-    .volver-inicio a:hover {
-      transform: scale(1.05);
-    }
-
-    .social-icons {
-      margin-top: 40px;
-    }
-
-    .social-icons a {
-      margin: 0 15px;
-      display: inline-block;
+    footer {
+      margin-top: 60px;
     }
 
     .social-icons img {
       width: 50px;
       height: 50px;
-      transition: transform 0.3s;
-    }
-
-    .social-icons img:hover {
-      transform: scale(1.1);
+      margin: 0 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="juegos.html">Juegos</a></li>
-      <li><a href="aplicaciones.html">Aplicaciones</a></li>
-      <li><a href="tutoriales.html">Tutoriales</a></li>
-    </ul>
-  </nav>
+  <h1>🎮 Juegos</h1>
 
-  <div class="container">
-    <h1>🎮 Juegos</h1>
-    
-    <section class="game-box">
-      <img src="https://cdn2.steamgriddb.com/logo_thumb/7e7ba2bff736b98076b128c9dba18279.png" alt="Logo SA-MP" style="width: 200px; border-radius: 10px; box-shadow: 0 0 10px #00f0ff;">
-      <h2>GTA San Andreas + SAMP (2025)</h2>
-      <p>(Primera persona)</p>
-      <div class="download-buttons">
-        <a href="https://cuty.io/AyPBFOcZSmqn" class="btn" target="_blank">🚀 Descargar Juego</a>
-      </div>
-    </section>
+  <!-- Juego 1 -->
+  <div class="juego-box">
+    <img src="https://i.imgur.com/yQMo44k.png" alt="GTA Logo" class="juego-logo">
+    <h2>GTA San Andreas + SAMP (2025)</h2>
+    <p>(Primera persona)</p>
+    <a href="https://www.youtube.com/watch?v=VizO8aP855A" class="btn" target="_blank">👀 Ver Tutorial</a>
+    <br>
+    <a href="https://krmafree.github.io/KrmaFree/descargas/gta-samp.zip" class="btn" target="_blank">🚀 Descargar Juego</a>
+  </div>
 
-        <section class="game-box">
-      <img src="https://www.scheduleonegame.com/img/extended-logo.png" alt="Logo Schedule I" style="width: 200px; border-radius: 10px; box-shadow: 0 0 10px #00f0ff;">
-      <h2>Schedule 1 (2025)</h2>
-      <p>(ESPAÑOL)</p>
-      <div class="download-buttons">
-        <a href="https://cuty.io/3osfrQX" class="btn" target="_blank">🚀 Descargar Juego</a>
-      </div>
-    </section>
+  <!-- Juego 2 -->
+  <div class="juego-box">
+    <img src="https://i.imgur.com/1GpYqtp.png" alt="Schedule Logo" class="juego-logo">
+    <h2>Schedule 1 (2025)</h2>
+    <p>(ESPAÑOL)</p>
+    <a href="https://www.youtube.com/watch?v=EYY3oUlT9-0" class="btn" target="_blank">👀 Ver Tutorial</a>
+    <br>
+    <a href="https://krmafree.github.io/KrmaFree/descargas/schedule.zip" class="btn" target="_blank">🚀 Descargar Juego</a>
+  </div>
 
-    <div class="volver-inicio">
-      <a href="index.html">🔙 Volver al inicio</a>
-    </div>
-
+  <!-- Redes sociales -->
+  <footer>
     <div class="social-icons">
       <a href="https://kick.com/krmafree" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kick.com_logo.svg/512px-Kick.com_logo.svg.png" alt="Kick" style="width: 50px; height: 50px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kick.com_logo.svg/512px-Kick.com_logo.svg.png" alt="Kick">
       </a>
-      <a href="https://www.tiktok.com/@el_krmaverso" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
-      </a>
+      <!-- Puedes añadir más redes si deseas -->
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
