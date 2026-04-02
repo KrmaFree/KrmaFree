@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>JUEGOS - El KrmaVerso</title>
+  <style>
+    body {
+      background: radial-gradient(circle at center, #1a0033, #000000);
+      color: #00f0ff;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background: #111122;
+      border-bottom: 2px solid #00f0ff;
+    }
+
+    nav ul li a {
+      color: #00f0ff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff00ff;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    .juego {
+      border: 2px solid cyan;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 400px;
+      background: #0d0221;
+      text-align: center;
+      box-shadow: 0 0 20px cyan;
+      transition: 0.3s;
+    }
+
+    .juego:hover {
+      box-shadow: 0 0 25px #00f0ff, 0 0 30px #00f0ff;
+    }
+
+    .juego img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+.grid-JUEGOS PESADOS {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+  gap: 40px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+    .boton-tutorial, .boton-descarga {
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 30px;
+      background: linear-gradient(to right, #00f0ff, #9d00ff);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #00f0ff;
+      display: inline-block;
+    }
+
+    .boton-tutorial:hover, .boton-descarga:hover {
+      background: linear-gradient(to right, #9d00ff, #00f0ff);
+      box-shadow: 0 0 15px #ffffff;
+      transform: scale(1.05);
+    }
+
+    .volver-inicio a:hover {
+      transform: scale(1.05);
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>📱 JUEGOS PESADOS</h1>
+
+  <div class="grid-JUEGOS PESADOS">
+
+    <div class="juego">
+      <img src="https://store-images.s-microsoft.com/image/apps.51903.71972716530068101.ccdcadf1-1d2a-49f2-9c37-0b0a27e5a53c.08e06d2d-1104-4c80-b879-91facf8348d5?q=90&w=177&h=265" alt="AC Odyssey">
+      <h2>Assassin's Creed Odyssey</h2>
+      <p>(GOLD EDITION LITE)</p>
+
+
+
+      <a href="https://www.youtube.com/watch?v=eJhfGun-erM" class="boton-tutorial" target="_blank">👀 Ver Tutorial</a>
+      <a href="https://drive.google.com/file/d/1PmCkteJ0Ct0pu1v2g48zLEagcj7CRVjq/view" class="boton-descarga" target="_blank">🚀 PARTE 1/a>
+      <a href="https://drive.google.com/file/d/1BmOSPLaMYBuEfUywmMI7Hys88WJEEwcg/view" class="boton-descarga" target="_blank">🚀 PARTE 2/a>
+      <a href="https://drive.google.com/file/d/1InZSGXO8-r91aFw6cDNW2Ubk_tEt10w1/view" class="boton_descarga" target="_blank">🚀 PARTE 3/a>
+    </div>
+
+
+    <div class="social-icons">
+      <a href="https://kick.com/krmafree" target="_blank">
+        <img src="https://i.pinimg.com/736x/f6/4f/56/f64f5611aabc03a17fa0a1ddfc7d0490.jpg" alt="Kick">
+      </a>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
